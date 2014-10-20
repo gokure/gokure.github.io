@@ -1,0 +1,4 @@
+gokure.github.io
+================
+
+My blog build with Jekyll
