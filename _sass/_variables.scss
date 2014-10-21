@@ -3,21 +3,22 @@
 // VARIABLES
 //
 
-// Colors
+// Basic Colors
 $blue: #4183C4; 
-
-// Grays
 $black: #000;
-$darkerGray: #222;
-$darkGray: #333;
+$darker-gray: #222;
+$dark-gray: #333;
 $gray: #666;
-$lightGray: #eee;
+$light-gray: #eee;
 $white: #fff;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$base-font-family: Helvetica, Arial, sans-serif;
+$header-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font: 18px/1.4 $base-font-family;
+
+$text-color:       $dark-gray;
+$background-color: $white;
+$brand-color:      $blue;
 
 // Mobile breakpoints
 @mixin mobile {
