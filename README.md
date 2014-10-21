@@ -1,4 +1,5 @@
 gokure.github.io
 ================
 
-My blog build with Jekyll
+[My blog build with Jekyll](http://gokure.github.io/)
+
