@@ -304,6 +304,9 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+  > .icons-link a {
+    margin: 0 3px;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
