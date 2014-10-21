@@ -3,26 +3,32 @@
 // VARIABLES
 //
 
-// Basic Colors
 $blue: #4183C4; 
 $black: #000;
-$darker-gray: #222;
-$dark-gray: #333;
-$gray: #666;
-$light-gray: #eee;
 $white: #fff;
+$gray-color-darker: #222;
+$gray-color-dark: #333;
+$grey-color: #666;
+$grey-color-light: lighten($grey-color, 40%);
 
 $base-font-family: Helvetica, Arial, sans-serif;
 $header-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font: 18px/1.4 $base-font-family;
 
-$text-color:       $dark-gray;
+$text-color:       $gray-color-dark;
 $background-color: $white;
 $brand-color:      $blue;
+
+$spacing-unit:     30px;
+
 
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
     @content;
   }
+}
+
+%vertical-rhythm {
+   margin-bottom: $spacing-unit / 2;
 }

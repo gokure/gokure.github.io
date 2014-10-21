@@ -34,7 +34,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
-  color: $darker-gray;
+  color: $gray-color-darker;
   font-weight: bold;
 
   line-height: 1.7;
@@ -63,7 +63,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $grey-color;
 }
 
 p {
@@ -112,19 +112,41 @@ img {
   max-width: 100%;
 }
 
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: #eef;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll;
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .date {
   font-style: italic;
-  color: $gray;
+  color: $grey-color;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $light-gray;
+  background: $grey-color-light;
 }
 ::selection {
   color: $black;
-  background: $light-gray;
+  background: $grey-color-light;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -157,7 +179,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $light-gray;
+  border-bottom: 1px solid $grey-color-light;
 
   @include mobile {
     text-align: center;
@@ -193,7 +215,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $dark-gray;
+  color: $gray-color-dark;
   cursor: pointer;
   font-family: $header-font-family;
   font-weight: 300;
@@ -203,8 +225,8 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
+  color: $grey-color-light;
+  font-size: 14px;
 
   @include mobile {
     margin: 3px 0;
@@ -226,7 +248,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $dark-gray;
+    color: $gray-color-dark;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -244,7 +266,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $light-gray;
+  border-bottom: 1px solid $grey-color-light;
 }
 
 .posts > .post:last-child {
@@ -255,9 +277,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $grey-color;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $grey-color;
     font-size: 22px;
     font-style: italic;
   }
@@ -276,7 +298,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $light-gray;
+  background-color: $grey-color-light;
 }
 
 footer {
@@ -286,4 +308,4 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "_highlights";
+@import "_syntax-highlighting";
