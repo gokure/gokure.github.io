@@ -50,13 +50,15 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 permalink: /articles/:title/
+
 
 gems:
   - jemoji
   - jekyll-sitemap
+  - redcarpet
 
 exclude:
     - Gemfile
