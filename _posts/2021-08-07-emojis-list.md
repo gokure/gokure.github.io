@@ -3,7 +3,7 @@ layout: post
 title: Emojis list
 date: 2021-08-07 12:08:09 +08:00
 category: blog
-tags: [Emoji]
+tags: [emoji]
 ---
 
 Here is the list of all the emoji or atleast max of it.
