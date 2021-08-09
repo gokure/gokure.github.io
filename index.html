@@ -3,16 +3,20 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+{% for post in paginator.posts %}
+    {% if post.category == 'blog' %}
+        {% if post.hidden != true %}
+        <article class="post">
+            <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
 
-      <div class="entry">
-        {{ post.content | truncatewords:60}}
-      </div>
+            <div class="entry">
+                {{ post.excerpt }}
+            </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-
+            <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
+        </article>
+        {% endif %}
+    {% endif %}
+{% endfor %}
 </div>
+{% include pagination.html %}

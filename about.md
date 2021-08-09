@@ -1,18 +1,29 @@
 ---
 layout: page
+title: About
 permalink: /about/
 ---
 
-大家好，我是**吴刚**，80后程序员。喜欢学习和研究我喜欢的专业技术，我既非牛人，也非高手，只有在实践中积累了一些经验和心得，不太会写博客，之前也使用过[Wordpress][]和[ITeye][]，但都没有坚持下去:sweat_smile:，现在使用GitHub Pages的人也越来越多，众望所归，希望这次是有个好的归宿。
+Hi there! How're you doing?
 
-个人简介
--------
+我叫吴刚，有多年 Web 开发经验，数据库优化，项目架构设计，开源贡献者。多年的实践积累了一些解决问题的经验和能力，希望对您有帮助。
 
-十年的网站开发经验，擅长4种以上编程语言和Web开发的技术。擅长数据库的优化，了解非关系型数据库和高并发访问的优化。有团队管理经验，也可做项目架构，具有Full Stack Developer能力。为开源做过贡献，喜欢研究新技术，以及在编程中寻找乐趣。
+### 专业技能
 
-擅长PHP/Ruby/Python/Java和Javascript等，有丰富的编码实战经验。熟练在Linux下开发，可跨平台协作开发。
+- **Languages:** PHP, Python, Ruby, Node.js, Go, Java
+- **Frontend:** ES6, TypeScript
+- **Databases:** MySQL, MongoDB, Redis, Elasticsearch
+- **Web Framework:** Laravel, Hyperf, Flask, Django, Vue.js
+- **Misc:** Linux, Nginx, Docker, CI/CD
 
-工作需求得以很早就接触到国外的先进技术（比如Facebook、Twitter等App的开发），并且养成了阅读国外网站的习惯和解决棘手问题的能力。
+### 工作经历
 
-[ITeye]:     http://ggtalk.iteye.com/   
-[Wordpress]: http://gokure.wordpress.com/
+- [好未来](https://www.100tal.com/) (2015.09 - 至今)
+- [趣店](https://www.qufenqi.com/) (2014.11 - 2015.09)
+- [高汇通](http://www.gaohuitong.com/) (2012.02 - 2014.12)
+- [CSDN](https://www.csdn.net) (2012.02 - 2010.08)
+- VisionTen (2006.06 - 2012.02)
+
+### 教育经历
+
+- [内蒙古科技大学](http://www.btu.edu.cn)

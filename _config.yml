@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Broken on Memory
+name: "Broken in Memory"
 
 # Short bio or description (displayed in the header)
-description: Talk is cheap. Do IT.
+description: "Talk is cheap. Do IT."
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: http://s.gravatar.com/avatar/90b61e7409f0e7177258ec73b1f38204?s=80
+avatar: "http://s.gravatar.com/avatar/90b61e7409f0e7177258ec73b1f38204?s=80"
 
 #
 # Flags below are optional
@@ -18,15 +18,15 @@ avatar: http://s.gravatar.com/avatar/90b61e7409f0e7177258ec73b1f38204?s=80
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: "gokure@gmail.com"
   facebook:
   flickr:
-  github: gokure
+  github: "gokure"
   instagram:
-  linkedin: gokure
+  linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: gokure
+  rss: true # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   weibo:
 
@@ -34,7 +34,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-4620973-10
+google_analytics: "UA-4620973-10"
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -46,22 +46,28 @@ url:
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+permalink: "/:year/:month/:day/:title/"
 
-markdown: redcarpet
-highlighter: pygments
-permalink: /articles/:title/
+paginate: 10
 
+paginate_path: "/blog/:num/"
 
-gems:
-  - jemoji
+plugins:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
   - jekyll-sitemap
-  - redcarpet
+  - jekyll-admin
+  - jekyll-paginate
+  - jemoji
 
 exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - LICENSE
+  - README.md
