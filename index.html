@@ -7,7 +7,8 @@ layout: default
     {% if post.category == 'blog' %}
         {% if post.hidden != true %}
         <article class="post">
-            <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+            <aside class="date"><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date: "%b %d, %Y" }}</time></aside>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
 
             <div class="entry">
                 {{ post.excerpt }}

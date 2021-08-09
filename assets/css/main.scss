@@ -36,7 +36,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
   color: $gray-color-darker;
-  font-weight: bold;
+  font-weight: normal;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -45,13 +45,14 @@ h1, h2, h3, h4, h5, h6 {
   @include mobile {
     line-height: 1.4;
   }
+
+  a {
+    color: inherit;
+  }
 }
 
 h1 {
   font-size: 30px;
-  a {
-    color: inherit;
-  }
 }
 
 h2 {
@@ -64,7 +65,6 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $grey-color;
 }
 
 p {
@@ -115,6 +115,7 @@ img {
 
 pre,
 code {
+  font-family: 'Fira Code', Menlo, Monaco, 'Courier New', monospace;
   font-size: 15px;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
@@ -274,7 +275,7 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: 1px solid $grey-color-light;
 }
 
@@ -293,13 +294,19 @@ nav {
     font-style: italic;
   }
 
+  .date {
+    font-size: 80%;
+    float: right;
+    color: $grey-color;
+  }
+
   .comments {
     margin-top: 10px;
   }
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 11px;
   }
 }
 

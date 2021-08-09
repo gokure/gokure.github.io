@@ -8,23 +8,23 @@ layout: compress
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
 
-    <meta name="author" content="{{ site.name }}" />
+    <meta name="author" content="{{ site.title }}" />
     <meta name="description" content="{{ site.description }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ '/css/main.css' | relative_url }}" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ '/feed.xml' | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ '/feed.xml' | relative_url }}" />
   </head>
 
   <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ '/' | relative_url }}" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }}" /></a>
+          <a href="{{ '/' | relative_url }}" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.title }}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ '/' | relative_url }}">{{ site.name }}</a></h1>
+            <h1 class="site-name"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
 
